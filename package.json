@@ -6,6 +6,7 @@
   "author": "beraliv.spb@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.3",
     "socksv5": "^0.0.6"
   },
   "scripts": {
