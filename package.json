@@ -1,0 +1,11 @@
+{
+  "name": "socks5-telegram-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Beraliv/socks5-telegram-server.git",
+  "author": "beraliv.spb@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "socksv5": "^0.0.6"
+  }
+}
