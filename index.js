@@ -2,7 +2,7 @@ const socksv5 = require('socksv5')
 
 console.log(process.env.IP)
 
-const PORT = 9002
+const PORT = 8080
 
 const server = socksv5.createServer((_, resolve) => resolve())
 server.listen(PORT, () => console.log(`Listen: localhost:${PORT}`))
