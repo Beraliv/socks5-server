@@ -1,6 +1,6 @@
 const socksv5 = require('socksv5')
 
-const DOMAIN = 'socks5-telegram-server.herokuapp.com'
+const DOMAIN = '54.243.101.177'
 const PORT = 9002
 
 const server = socksv5.createServer((_, resolve) => resolve())
