@@ -52,7 +52,7 @@ You need to configure both server and client
 
 ### Service
 
-1. See [Quick Start](https://github.com/Beraliv/socks5-telegram-server#quick-start)
+1. From [Quick Start](https://github.com/Beraliv/socks5-telegram-server#quick-start) download git repo and dependencies
 2. Go to services directory with `cd /etc/systemd/system`
 3. Create service for the server with `sudo touch s5ts.service`
 4. Give write permissions to all users to the file with `sudo chmod 777 s5ts.service` and `sudo chown ubuntu s5ts.service`
@@ -80,8 +80,9 @@ WantedBy=multi-user.target
 > Note RHEL/Fedora uses 'nobody', Debian/Ubuntu uses 'nogroup' as Group
 
 7. `Esc` + `:wq!` will save and exit from Vim
-8. Make systemd aware of the new service with `sudo systemctl daemon-reload`
-9. Make the service start on boot with `sudo systemctl enable s5ts`
+8. To access `index.js` from create service, you need to add `sudo chmod 777 index.js` and `sudo chown ubuntu index.js` to `ExecStart` file
+9. Make systemd aware of the new service with `sudo systemctl daemon-reload`
+10. Make the service start on boot with `sudo systemctl enable s5ts`
 
 ### Service setups
 
