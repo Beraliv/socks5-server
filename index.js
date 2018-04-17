@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const socksv5 = require('socksv5')
 
 const PORT = 1080
