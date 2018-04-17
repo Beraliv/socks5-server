@@ -80,7 +80,7 @@ WantedBy=multi-user.target
 > Note RHEL/Fedora uses 'nobody', Debian/Ubuntu uses 'nogroup' as Group
 
 7. `Esc` + `:wq!` will save and exit from Vim
-8. To access `index.js` from create service, you need to add `sudo chmod 777 index.js` and `sudo chown ubuntu index.js` to `ExecStart` file
+8. To access `index.js` from created service, you need to add `sudo chmod 777 index.js` and `sudo chown ubuntu index.js` to `ExecStart` file
 9. Make systemd aware of the new service with `sudo systemctl daemon-reload`
 10. Make the service start on boot with `sudo systemctl enable s5ts`
 
