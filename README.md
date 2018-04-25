@@ -2,6 +2,8 @@
 
 Node.js server supporting SOCKS5 protocol
 
+- [x] call support
+
 ## Quick start
 
 > You can use either `npm` or `yarn` to follow the instructions
