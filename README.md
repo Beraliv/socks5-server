@@ -1,4 +1,4 @@
-# socks5-telegram-server
+# socks5-server
 
 Node.js server supporting SOCKS5 protocol
 
@@ -10,7 +10,7 @@ Node.js server supporting SOCKS5 protocol
 
 1. Download Git repo:
 ```bash
-git clone https://github.com/Beraliv/socks5-telegram-server
+git clone https://github.com/Beraliv/socks5-server
 ```
 
 2. Download dependencies:
@@ -54,7 +54,7 @@ You need to configure both server and client
 
 ### Service
 
-1. From [Quick Start](https://github.com/Beraliv/socks5-telegram-server#quick-start) download git repo and dependencies
+1. From [Quick Start](https://github.com/Beraliv/socks5-server#quick-start) download git repo and dependencies
 2. Go to services directory with `cd /etc/systemd/system`
 3. Create service for the server with `sudo touch s5ts.service`
 4. Give write permissions to all users to the file with `sudo chmod 777 s5ts.service` and `sudo chown ubuntu s5ts.service`
@@ -67,13 +67,13 @@ Description=Node server which supports SOCKS5 protocol
 After=network.target
 
 [Service]
-ExecStart=/home/ubuntu/socks5-telegram-server/index.js
+ExecStart=/home/ubuntu/socks5-server/index.js
 Restart=always
 User=ubuntu
 Group=nogroup  
 Environment=PATH=/usr/bin:/usr/local/bin
 Environment=NODE_ENV=production
-WorkingDirectory=/home/ubuntu/socks5-telegram-server
+WorkingDirectory=/home/ubuntu/socks5-server
 
 [Install]
 WantedBy=multi-user.target
@@ -97,8 +97,8 @@ WantedBy=multi-user.target
 2. Add a new line at the end: `$YOUR_IP_HERE$ $NAME$`, i.e. `173.21.33.95 s5ts.local`
 3. Connect using specified settings:
 
-![Connection Type](https://github.com/Beraliv/socks5-telegram-server/blob/master/images/proxy-settings.png)
+![Connection Type](https://github.com/Beraliv/socks5-server/blob/master/images/proxy-settings.png)
 
 or
 
-![Connection Type (alternative way)](https://github.com/Beraliv/socks5-telegram-server/blob/master/images/proxy-settings-2.png)
+![Connection Type (alternative way)](https://github.com/Beraliv/socks5-server/blob/master/images/proxy-settings-2.png)
